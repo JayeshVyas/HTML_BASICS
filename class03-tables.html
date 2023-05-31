@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES in HTML</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-spacing: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Tables in HTML by Jayesh Vyas
+    </h1>
+    <!--tables are the combinations of multiple rows and columns-->
+    <table style="width:50%">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Subject
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Jayesh
+            </td>
+            <td>
+                29
+            </td>
+            <td>
+                CSE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nikita
+            </td>
+            <td>
+                20
+            </td>
+            <td>
+                CSE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Noor
+            </td>
+            <td>
+                22
+            </td>
+            <td>
+                CSE
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <!--example of the colspan-->
+    <table style="width: 100%;">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Subjects</th>
+        </tr>
+        <tr>
+            <td>
+                Jayesh Vyas
+            </td>
+            <td>
+                Physics
+            </td>
+            <td>
+                Mathematics
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                Vinit Vyas
+            </td>
+            <td>
+                Chemistry
+            </td>
+            <td>
+                Physics
+            </td>
+        </tr> 
+        </table>
+        <br><br><br><br>
+        <table>
+            <!--example of row span-->
+        <tr>
+            <th>Name:</th>
+            <td>Jayesh Vyas</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Subjects</th>
+            <td>Mathematics</td>
+        </tr>
+        <tr>
+           <td>Physics</td> 
+        </tr>
+    </table>
+</body>
+</html>
