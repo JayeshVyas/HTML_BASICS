@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - Part 2</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+        th,td{
+            padding: 5px;
+            text-align: left;
+        }
+       
+        table#t12{
+            background-color: #F2DCD7;
+            width: 100%;
+        }
+          
+        table#t11{
+            background-color: blue;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables Part - 2 with CSS</h1>
+    <table id="t12">
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Mobile No.
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Ajith
+            </td>
+            <td>
+                Ajith
+            </td>
+            <td>9999999999</td>
+        </tr>
+        <tr>
+            <td>Akhilesh</td>
+            <td>Akhilesh</td>
+            <td>777777777</td>
+        </tr>
+        <tr>
+            <td>Jayesh</td>
+            <td>Vyas</td>
+            <td>8502074843</td>
+        </tr>
+    </table>
+
+    <!--Nested HTML Tables-->
+    <table id="t11">
+        <tr>
+            <td> Single Big Row</td>
+            <td>
+                <table style="width: 100%;">
+                    <tr> 
+                        <td>Inner Row 1</td>
+                    </tr>
+                    <tr>
+                        <td> Inner Row 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
