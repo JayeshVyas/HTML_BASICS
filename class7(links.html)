@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links in HTML</title>
+    <title>Links in HTML by Jayesh Vyas</title>
     <style>
         a:link{
             color: red;
