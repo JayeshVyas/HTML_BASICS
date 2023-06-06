@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links in HTML</title>
+    <style>
+        a:link{
+            color: red;
+            background-color: transparent;
+        }
+        a:visited{
+            color: green;
+            background-color: transparent;
+        }
+        a:hover{
+            color: blue;
+        }
+        .vertical{
+            border-left: 1px solid black;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Visited Link</p>
+    <a href="https://www.edyoda.com/home" target="_blank">Edyoda</a>
+    <p>UnVisited Link</p>
+    <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+    <a href="https://mail.google.com/mail/u/0/" target="_blank">Gmail</a>
+    <a href="https://www.dljflfjldfg.com" target="_blank">Gmail</a>
+    <a href="/claas03-tables.html" target="_blank">tables info</a>
+
+    <a href="https://www.edyoda.com/home" target="_blank">
+        <img src="/emotional-cry.gif" alt="Edyoda"  >
+    </a>
+    <hr>
+    <a href="/Resume.pdf" target="_blank">Download File</a>
+    <!--Vertical Line in HTML-->
+    <div class="vertical"></div>
+</body>
+</html>
