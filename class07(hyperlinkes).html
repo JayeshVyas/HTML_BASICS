@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperLinks in Sections  in HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .section{
+            width:100vw;
+            height: 40vh;
+            background-color: blue;
+            font-size: 50px;
+            color: white;
+            margin: 10px 4px;
+            text-align: center;
+        }
+        .one,.three,.five{
+            background-color: pink;
+        }
+        .nav{
+            width:100vw;
+            height: 40vh;
+            background-color: aqua;
+            font-size: x-large;
+            text-align: center;
+            display: flex;
+            place-items: center;
+            margin: 10px 4px;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#section1" class="btn">Section I</a>
+        <a href="#section2" class="btn">Section II</a>
+        <a href="#section3" class="btn">Section III</a>
+        <a href="#section4" class="btn">Section IV</a>
+        <a href="#section5" class="btn">Section V</a>
+        <a href="#section6" class="btn">Section VI</a>
+    </div><br><br><br><br><br>
+    <div class="section one" id="section1">
+        Section I
+    </div>
+    <div class="section two" id="section2">
+        Section II
+    </div>
+    <div class="section three" id="section3">
+        Section III
+    </div>
+    <div class="section four" id="section4">
+        Section IV
+    </div>
+    <div class="section five" id="section5">
+        Section V
+    </div>
+    <div class="section six" id="section6">
+        Section VI
+    </div>
+</body>
+</html>
