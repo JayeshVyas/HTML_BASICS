@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form in HTML</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+}
+.container{
+max-width: 50rem;
+margin: 2rem auto;
+padding: 0px 2rem;
+border: 1px solid;
+}
+.main-heading {
+  font-size: 4rem;
+  margin: 2rem 0rem 1rem;
+  color: white;
+  text-align: center;
+}
+.form-class {
+  margin: 2rem 0px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+.heading-field {
+  margin: 1rem 0px 0.6rem;
+}
+
+.field-head {
+  font-size: 2rem;
+}
+
+.input-div {
+  margin-bottom: 1rem;
+}
+.field-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.form-control-input {
+  font-size: 1.5rem;
+  padding: 0.4rem 0px;
+  text-indent: 0.5rem;
+  border: none;
+  outline: 1px solid #999;
+  border-radius: 7px;
+  width: 100%;
+  color: #999;
+}
+option {
+  color: #999;
+}
+.radio {
+  outline: none;
+}
+button {
+  font-size: 2rem;
+  margin: 0px auto;
+  display: block;
+  color: wite;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid white;
+  background-color: #023de3;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px #0000;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.form-control-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.help-text {
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+  padding: 0.1rem;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">Survey Form</h1>
+        <hr>
+        <form class="form-class">
+            <!--Name Starts-->
+            <div class="form-control">
+                <div class="heading-field">
+                    <h3 class="filed-head">Customer Name</h3>
+                </div>
+                <div class="field-inputs">
+                    <div class="input-div">
+                        <input type="text" class="form-control-input" name="first name" id="first-name" required>
+                        <div id="first-name-help" class="help-text">Enter First Name</div>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" class="form-control-input" name="last name" id="last-name" required>
+                        <div id="last-name-help" class="help-text">Enter Last Name</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Name Ends-->
+            <!-- Address started-->
+            <div class="form-control">
+                <div class="heading-field">
+                    <h3 class="filed-head">Address</h3>
+                </div>
+                <div>
+                    <div class="input-div">
+                        <input type="text" class="form-control-input" id="street-address"
+                        name="address" required>
+                        <div id="street-address-help" class="help-text">Street Address</div>
+                    </div>
+                </div>
+                <div class="field-inputs">
+                    <div class="input-div">
+                        <input type="text" class="form-control-input" id="city-name" 
+                        name="city" required>
+                        <div id="city-help" class="help-text">City</div>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" class="form-control-input" id="state-name"
+                         name="state" required>
+                         <div id="state-name-help" class="help-text">State</div>
+                    </div>
+                </div>
+
+                <div class="field-inputs">
+                    <div class="input-div">
+                        <input type="number" class="form-control-input" 
+                        id="zip-code" name="zip" required>
+                        <div id="zip-code-help" class="help-text">Zip</div>
+                    </div>
+                    <div class="input-div">
+                        <select class="form-control-input" name="Country" required>
+                            <option value="USA">USA</option>
+                            <option value="India">India</option>
+                            <option value="Afganistan">Afganistan</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="China">China</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Srilanka">Srilanka</option>
+                        </select>
+                        <div id="country-help" class="help-text">Select Country</div>
+                    </div>
+                </div>
+            </div>
+            <!--Address Ends here-->
+            <!--Ratings starts here-->
+             <!-- person detail  -->
+    <div class="form-control">
+        <div class="heading-field">
+          <h3 class="field-head">Personal Details </h3>
+        </div>
+        <div class="field-inputs">
+          <div class="input-div">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+          </div>
+        </div>
+      </div>
+      <!-- personal detail ends -->
+            <div class="form-control">
+                <div class="heading-field">
+                    <h3 class="filed-head">Ratings</h3>
+                </div>
+                <div class="field-inputs" style="margin: 0.5rem 0px;">
+                    <h5>Food:</h5>
+                    <div class="input-div" style="display: flex; grid-area: 10px;">
+                        <input type="radio" id="bad" name="food" value="bad">
+                        <label for="bad">Bad</label><br>
+                        <input type="radio" id="good" name="food" value="good">
+                        <label for="good">Good</label><br>
+                        <input type="radio" id="excellent" name="food" value="excellent">
+                        <label for="excellent">Excellent</label><br>
+                    </div>
+                </div>
+                <div class="field-inputs" style="margin: 0.5rem 0px;">
+                    <h5>Rooms:</h5>
+                    <div class="input-div" style="display: flex; grid-area: 10px;">
+                        <input type="radio" id="bad" name="rooms" value="bad">
+                        <label for="bad">Bad</label><br>
+                        <input type="radio" id="good" name="rooms" value="good">
+                        <label for="good">Good</label><br>
+                        <input type="radio" id="excellent" name="rooms" value="excellent">
+                        <label for="excellent">Excellent</label><br>
+                    </div>
+                </div>
+                <div class="field-inputs" style="margin: 0.5rem 0px;">
+                    <h5>Family:</h5>
+                    <div class="input-div" style="display: flex; grid-area: 10px;">
+                        <input type="radio" id="bad" name="family" value="bad">
+                        <label for="bad">Bad</label><br>
+                        <input type="radio" id="good" name="family" value="good">
+                        <label for="good">Good</label><br>
+                        <input type="radio" id="excellent" name="family" value="excellent">
+                        <label for="excellent">Excellent</label><br>
+                    </div>
+                </div>
+                <div class="field-inputs" style="margin: 0.5rem 0px;">
+                    <h5>Area:</h5>
+                    <div class="input-div" style="display: flex; grid-area: 10px;">
+                        <input type="radio" id="bad" name="area" value="bad">
+                        <label for="bad">Bad</label><br>
+                        <input type="radio" id="good" name="area" value="good">
+                        <label for="good">Good</label><br>
+                        <input type="radio" id="excellent" name="area" value="excellent">
+                        <label for="excellent">Excellent</label><br>
+                    </div>
+                </div>
+            </div>
+            <!--Rating ends here-->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
