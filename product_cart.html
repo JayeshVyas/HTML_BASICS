@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        .btn {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #282A35;
+  color: white;
+  position: relative;
+}
+        .cart{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 250px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .price{
+            color: grey;
+            font-size: 18px;
+        }
+        .cart button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+}
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #ff9800;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <h1> Product Cart</h1>
+    <div class="cart">
+        <img src="/blue-jeans-isolated-white-34440719.webp" style="width: 100%;">
+        <h1>Cargo Jeans</h1>
+        <p class="price">1350/-</p>
+        <p>Jeans exported from china.</p>
+        <p><button>Add to Cart <span style="width: 50%;">+</span></button></p>
+        
+    </div>
+    <div class="cart">
+        <img src="/blue-jeans-isolated-white-34440719.webp" style="width: 100%;">
+        <h1>Cargo Jeans</h1>
+        <p class="price">1350/-</p>
+        <p>Jeans exported from china.</p>
+        <p><button>Add to Cart <span style="width: 50%;">+</span></button></p>
+    </div>
+    <button class="btn">Click here for 50% Off <span class="ribbon">NEW</span></button>
+</body>
+</html>
