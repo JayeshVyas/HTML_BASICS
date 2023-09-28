@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/login.html">
+        <p>
+            <label>FirstName : <input type="text" required/></label>
+        </p>
+        <p>
+            <label>LastName : <input type="text"/></label>       
+        </p>
+        <p>Select Your Gender : </p>
+        <label>Male <input type="radio" name="gender" value="male"/></label>
+        <label>FeMale <input type="radio" name="gender" value="female"/></label>
+        <label>Others <input type="radio" name="gender" value="others"/></label>
+
+        <p>Select Your Languages : </p>
+        <ul style="list-style-type: none ;">
+            <li>
+                <input type="checkbox" name="language" value="hindi"/>
+                Hindi
+            </li>
+            <li>
+                <input type="checkbox" name="language" value="english"/>
+                English
+            </li>
+            <li>
+                <input type="checkbox" name="language" value="mewari"/>
+                Mewari
+            </li>
+            <li>
+                <input type="checkbox" name="language" value="kannad"/>
+                Kannada
+            </li>
+        </ul>
+        <h2>Nationality</h2>
+        <select name="nationality">
+            <option value="indian">Indian</option>
+            <option value="nepal" selected>Nepal</option>
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="others">Others</option>
+        </select>
+
+       <p>
+            <label> Mobile 
+                <input type="text" name="mobilenumber"/>
+            </label>
+       </p> 
+       <p>
+        <label>
+            Email: 
+            <input type="email" name="email"/>
+        </label>
+       </p>
+
+       <p>
+        <label>
+            Date of Birth:
+            <input type="date" name="date"/>
+        </label>
+       </p>
+      <label>Address
+        <textarea name="txtarea" rows="3" cols="40"></textarea>
+      </label>
+
+       <p><button type="submit">Submit</button></p>
+    </form>
+</body>
+</html>
